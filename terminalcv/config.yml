@@ -1,0 +1,227 @@
+baseURL: "https://aaronhuff.xyz/terminalcv"
+theme: "terminalcv"
+title: "terminalcv"
+
+params:
+  version: '1.0.0'
+  description: "My terminal cv"
+  prompt:
+    core:
+      text: "guest@rpi"
+      color: 'pink'
+      before: '['
+      beforeColor: 'red'
+      after: '\]'
+      afterColor: 'red'
+      # separator: '-'
+    separator:
+      text: "-"
+      # color: 
+    path: 
+      before: '['
+      beforeColor: 'red'
+      text: '~/terminalcv'
+      color: 'lightblue'
+      after: '\]'
+      afterColor: 'red'
+    extra:
+      text: ": "
+      color: 'orange'
+
+  # promptColor: grey
+  # promptSimbols: ":~$"
+  # promptSimbolsColor: grey
+  # startxLocation: https://example.com
+  # useLess: true
+  exitLocation: 'about:blank'
+  source: true
+  #use a ‎ (blank character) if your first character of the ascii art is a whitespace
+  # greeting: | 
+  #   ‎ _                      _             _  _______      __
+  #   | |                    (_)           | |/ ____\ \    / /
+  #   | |_ ___ _ __ _ __ ___  _ _ __   __ _| | |     \ \  / / 
+  #   | __/ _ \ '__| '_ ` _ \| | '_ \ / _` | | |      \ \/ /  
+  #   | ||  __/ |  | | | | | | | | | | (_| | | |____   \  /   
+  #    \__\___|_|  |_| |_| |_|_|_| |_|\__,_|_|\_____|   \/
+
+  #   Type 'help' for a list of available commands
+  greeting: |
+    Welcome to Aaron Huff's terminal CV!
+
+    Type 'help' for a list of available commands
+
+
+  whois: 
+    # settings:
+    #   useLess: true
+    details:
+      name: "Aaron Huff"
+      profession: "Network Automation Engineer"
+      location: "Chatham, ON, Canada"
+      email: "aaron@aaronhuff.xyz"
+      homelink: "https://aaronhuff.xyz"
+      # description: |
+      #         ---------------------------------------------------------
+      #         I’m a Network Automation Engineer who loves making tech work smarter, not harder. When I’m not busy scripting, you’ll find me playing with the latest gadgets or diving into some cybersecurity adventures
+
+  social:
+    # settings:
+    #   useLess: true
+    #   hideName: true
+    details:
+    - name: "github"
+      url: "https://github.com/aaronhuff"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/aaronthuff"
+    - name: "bluesky"
+      url: "https://bsky.app/profile/aaronhuff.xyz"
+
+  work:
+    # settings:
+    #   useLess: true
+    details:
+    - jobTitle: Network Planning Specialist
+      # color: red
+      company: Enbridge 
+      location: Chatham, ON
+      date: Nov 2018 - Present
+      description: Network design and automation specialist.
+
+    - jobTitle: Senior Application Developer
+      # color: purple
+      company: Union Gas
+      location: Chatham
+      date: Dec 2016 - Nov 2018
+      description: Support of various enterprise applications.
+
+    - jobTitle: Telecommunications Analyst
+      # color: pink
+      company: Compugen
+      location: Chatham
+      date: Dec 2010 - Dec 2016
+      description: VoIP migration and support.
+
+  education:
+    details:
+    - courseName: Seneca College
+      # color: red
+      date: 2003 - 2005
+      description: Digital Media Arts
+
+  skills:
+    settings:
+      # useLess: true
+    details:
+    - name: Networking
+      # color: green
+      percentage: 100
+
+    - name: DevOps
+      # color: purple
+      percentage: 80
+
+    - name: Python
+      # color: yellow
+      percentage: 90
+
+    - name: Cloud
+      # color: lightblue
+      percentage: 80
+
+    - name: Ansible
+      # color: red
+      percentage: 80
+
+    - name: Terraform
+      # color: orange
+      percentage: 65
+
+    - name: Docker
+      # color: pink
+      percentage: 75
+
+    - name: Git
+      percentage: 70
+
+    - name: Linux
+      percentage: 65
+
+  softskills:
+    # settings:
+    #   useLess: true
+    details:
+    - name: Leadership
+      # color: red
+      percentage: 80
+      #description:
+
+    - name:  Strategic
+      # color: orange
+      percentage: 90
+      # description: Description
+
+  languages:
+    # settings:
+    #   useLess: true
+    details:
+    - name: English
+      # color: Blue
+      percentage: 100
+      #description: 
+
+  projects:
+    # settings:
+    #   useLess: true
+    details:
+    - title: Double Merch DAO
+      # color: green
+      date: Since 2022
+      link: https://aaronhuff.github.io/double-merch/
+      description: Website for the OkayBears DoubleMerch DAO.
+
+  certifications:
+    # settings:
+    #   useLess: true
+    details:
+    - certName: Azure Developer Associate
+      company: Microsoft
+      date: 2024
+      # badge: https://www.link.to.badge
+
+    - certName: Multicloud Network Associate
+      company: Aviatrix
+      date: 2020
+      # badge: https://www.credly.com/badges/e9711e6d-569f-4937-a3ab-512c79ecb330/public_url
+
+    - certName: Cisco CCNA Voice
+      company: Cisco
+      date: 2014
+
+    - certName: Comptia A+
+      company: Comptia
+      date: 2007
+      # badge: https://www.link.to.badge
+      #description: Lorem Ipsum
+  
+  # misc: 
+  #   # settings:
+  #   #   useLess: true
+  #   commandName: newcommand
+  #   title: "This Section can have a different command name"
+  #   titleColor: teal
+  #   content: |
+  #         Here the title and the content can have different colors
+  #         The content can be multi
+          
+  #         line
+
+  #         And spaces       will be respected as well
+  #         This section will have the default command: misc
+  #         but you can name it something else with the property
+  #         commandName: <String>
+  #         Give it a shot and try and uncomment the line 
+  #         commandName: newcommand
+  #         now instead of misc you can execute the newcommand for this section
+  #         Auto completion will know it too! :D 
+
+  #   contentColor: orange
